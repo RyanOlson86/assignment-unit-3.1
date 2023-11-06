@@ -139,7 +139,8 @@ console.log("Reverse alpha order:", gems);
 //       "Emerald and Diamond and Tourmaline and Topaz"
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
-
+let gemString = gems.join(' and ');
+console.log(gemString);
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
@@ -147,6 +148,11 @@ console.log("Reverse alpha order:", gems);
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
+let colorfulGems = [...gems, ...colors];  // Option 1 with spread operator
+// let colorfulGems = gems.concat(colors); // Option 2a using array.concat()
+// let colorfulGems = [].concat(gems, colors); // Option 2b using array.concat()
+
+console.log('Colorful gems is:', colorfulGems);
 
 
 
