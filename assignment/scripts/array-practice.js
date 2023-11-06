@@ -120,10 +120,16 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+gems[1] = 'Tourmaline';
+console.log('Changed 2nd gem Citrine to:', gems[1]);
+console.log('The gems are:', gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
+gems.sort();
+console.log("Alphabetical order:", gems);
+gems.reverse();
+console.log("Reverse alpha order:", gems);
 
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
